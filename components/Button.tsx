@@ -27,11 +27,11 @@ export default function Button(props: ButtonProps) {
         font-bold text-[15px] tracking-[-0.12px]
         disabled:cursor-not-allowed
         ${isPrimary 
-          ? "text-link-water-white bg-dark-pink hover:bg-charm-pink disabled:opacity-50" 
+          ? "text-link-water-white bg-dark-pink enabled:hover:bg-charm-pink disabled:opacity-50" 
           : `bg-transparent border-[1px] disabled:opacity-50
             ${isLight
-              ? "text-link-water-white border-link-water-white hover:bg-link-water-white hover:text-mirage-blue"
-              : "text-san-juan-blue border-san-juan-blue hover:bg-san-juan-blue hover:text-white"}
+              ? "text-link-water-white border-link-water-white enabled:hover:bg-link-water-white enabled:hover:text-mirage-blue"
+              : "text-san-juan-blue border-san-juan-blue enabled:hover:bg-san-juan-blue enabled:hover:text-white"}
             `
         }
         ${className || ""}
