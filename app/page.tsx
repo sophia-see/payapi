@@ -1,10 +1,13 @@
 import Button from "@/components/Button";
+import Checkbox from "@/components/Checkbox";
 import TextArea from "@/components/TextArea";
 import TextField from "@/components/TextField";
 
 export default function Home() {
   return (
     <div className="flex flex-col text-center mx-auto gap-2 p-2 max-w-[300px]">
+      <Checkbox />
+      
       <TextArea error={"This field can’t be empty"}/>
       <TextField placeholder="Email Address" error={"This field can’t be empty"}/>
 
