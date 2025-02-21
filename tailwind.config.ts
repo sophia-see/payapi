@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        "dark-pink": "rgb(186, 66, 112)", //#ba4270
+        "link-water-white": "rgb(251, 252, 254)", //#fbfcfe
+
+        "san-juan-blue": "rgb(54, 83, 107)", //#36536b
+        "mirage-blue": "rgb(27, 38, 47)", //#1b262f
+        "charm-pink": "rgb(218, 109, 151)", //#da6d97
+        "light-san-juan-blue": "rgb(108, 130, 148)", //#6c8294
       },
     },
   },
