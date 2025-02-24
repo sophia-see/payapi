@@ -10,7 +10,7 @@ export default function Header({text, isHero = false, className}: HeaderProps) {
   return (
     <div
       className={`
-        xl:pb-[calc(72px/1.5)]
+        ${isHero ? "xl:pb-[calc(72px/1.5)]" : ""}
         serif 
         text-[32px] md:text-[48px] ${isHero ? "xl:text-[72px]" : ""}
         leading-[36px] md:leading-[56px] ${isHero ? "xl:leading-[72px]" : ""}
