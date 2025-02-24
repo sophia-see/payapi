@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Image from 'next/image'
 import CirclePattern from "@/components/CirclePattern";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 const sans = Public_Sans({
   variable: "--font-sans",
@@ -32,9 +34,10 @@ export default function RootLayout({
         className={`${sans.variable} ${serif.variable} antialiased`}
       >
         <div className="w-full h-full min-w-screen min-h-screen">
-          <CirclePattern />
           <Navbar />
-          {children}  
+          {children}
+          <CTA />
+          <Footer />
         </div>
       </body>
     </html>

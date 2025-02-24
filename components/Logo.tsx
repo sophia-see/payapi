@@ -4,7 +4,13 @@ import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import React from 'react'
 
-export default function Logo() {
+interface LogoProps {
+  mode?: "light" | "dark";
+}
+
+export default function Logo({mode = "light"}: LogoProps) {
+  const isDark = mode == "dark";
+
   return (
     <Image
       src={"/assets/shared/desktop/logo.svg"}
@@ -14,6 +20,7 @@ export default function Logo() {
       onClick={() => {
         redirect("/")
       }}
+      className={isDark ? "filter invert brightness-0" : ""}
     />
   )
 }
