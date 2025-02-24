@@ -27,7 +27,7 @@ export default function MobileMenu() {
           ${isOpen ? "md:hidden" : "hidden"}
         `}
       >
-        <CirclePattern className='z-20'/>
+        <CirclePattern className='z-20 inset-0 -translate-y-[60%]'/>
         <div 
           className={`
             relative
