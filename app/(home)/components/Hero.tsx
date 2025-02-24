@@ -9,7 +9,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div 
+    <section 
       className={`
         flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[150px]
         gap-6 md:gap-[48px]
@@ -34,6 +34,6 @@ export default function Hero() {
           <span className='font-bold mt-2'>Contact Us</span>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
