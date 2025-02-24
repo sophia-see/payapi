@@ -15,6 +15,7 @@ export default function EmailInput({className, ...props}: EmailInputProps) {
         font-bold text-[15px] text-san-juan-blue placeholder:opacity-50
         outline-none
       `}
+      placeholder='Enter email address'
       {...props}
     />
   )

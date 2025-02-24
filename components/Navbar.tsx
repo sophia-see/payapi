@@ -8,7 +8,7 @@ import Button from './Button'
 
 export default function Navbar() {
   return (
-    <header className='flex justify-between items-center pt-10 px-6 md:pt-[45px] md:px-10'>
+    <header className='flex justify-between lg:justify-start lg:gap-16 items-center pt-10 px-6 md:pt-[45px] md:px-10 lg:px-[165px]'>
       <Logo />
       <MobileMenu />
       <nav className='hidden md:flex gap-10 font-bold text-[15px] text-san-juan-blue opacity-70'>
@@ -16,7 +16,9 @@ export default function Navbar() {
         <Link href={"/about"}>About</Link>
         <Link href={"/contact"}>Contact</Link>
       </nav>
-      <Button className='hidden md:block'>Schedule a Demo</Button>
+      <div className='hidden md:block lg:flex-1 lg:text-end'>
+        <Button className='rounded-full'>Schedule a Demo</Button>
+      </div>
     </header>
   )
 }
