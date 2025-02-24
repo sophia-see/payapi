@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${sans.variable} ${serif.variable} antialiased`}
       >
-        <div className="w-full h-full min-w-screen min-h-screen">
+        <div className="w-full h-full min-w-screen min-h-screen overflow-x-hidden">
           <Navbar />
           {children}
           <CTA />
