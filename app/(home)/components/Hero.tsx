@@ -27,7 +27,7 @@ export default function Hero() {
         className='h-auto md:w-[158px] lg:w-[180px] xl:w-[262px]'
       />
       <div className='flex flex-col gap-6 items-center text-center md:gap-[22px] lg:order-first lg:text-start lg:items-start lg:max-w-[420px] xl:max-w-[546px]'>
-        <Header text='Start building with our APIs for absolutely free.' />
+        <Header text='Start building with our APIs for absolutely free.' isHero={true}/>
         <EmailField className='w-full lg:w-fit'/>
         <div className='text-light-san-juan-blue text-[15px] lg:ml-[27px]'>
           Have any questions?{" "}
