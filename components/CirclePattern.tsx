@@ -10,17 +10,14 @@ interface CirclePatternProps {
 export default function CirclePattern({parentClass, childClass}: CirclePatternProps) {
   return (
     <div className={`${parentClass || ""}`}>
-        <div className={`${childClass || ""}`}>
-        <div className="w-[780px] h-[780px]">
-          <Image
-            src="/assets/shared/desktop/bg-pattern-circle.svg"
-            alt="circle background pattern"
-            width={0}
-            height={0}
-            fill
-            className="object-cover"
-          />
-        </div>            
+      <div className={`flex ${childClass || ""}`}>
+        <Image
+          src="/assets/shared/desktop/bg-pattern-circle.svg"
+          alt="circle background pattern"
+          width={780}
+          height={780}
+          className="flex-shrink-0 w-[780px] h-[780px] aspect-square object-cover object-center"
+        />
       </div>
     </div>
   )

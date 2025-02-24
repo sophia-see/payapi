@@ -89,7 +89,7 @@ export default function MobileMenu() {
         >
           <CirclePattern 
             parentClass='absolute top-0 right-0 z-0 overflow-hidden'
-            childClass='w-screen h-screen -translate-y-[60%] h-full place-self-end ml-auto'
+            childClass='w-screen h-screen -translate-y-[85%] h-full place-self-end ml-auto'
           />
           <div className='flex flex-col'>
             <Image

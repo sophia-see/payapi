@@ -62,10 +62,10 @@ export default function Footer() {
           className="cursor-pointer filter invert brightness-0 hover:filter-none"
         />
       </div>
-        <CirclePattern 
-          parentClass='w-full absolute bottom-0 h-[185px] overflow-hidden'
-          childClass='absolute bottom-0 left-0 right-0 translate-y-[calc(780px-185px)] md:translate-x-[35%]'
-        />  
+      <CirclePattern 
+        parentClass='w-full absolute bottom-0 h-[185px] overflow-hidden'
+        childClass='absolute bottom-0 left-0 right-0 translate-y-[calc(780px-185px)] md:translate-x-[55%]'
+      />  
     </footer>
   )
 }
