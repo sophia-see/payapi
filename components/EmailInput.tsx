@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 
 interface EmailInputProps extends React.InputHTMLAttributes<HTMLInputElement> {

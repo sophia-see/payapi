@@ -6,8 +6,7 @@ import TextField from "@/components/TextField";
 
 export default function Home() {
   return (
-    <div className="p-10 flex flex-col mx-auto max-w-[300px]">
-      <EmailInput placeholder="Enter email Address"/>
+    <div>
     </div>
   );
 }
