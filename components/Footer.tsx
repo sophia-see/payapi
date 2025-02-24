@@ -2,9 +2,26 @@
 
 import React from 'react'
 import Logo from './Logo'
-import Link from 'next/link'
+import Link, { LinkProps } from 'next/link'
 import Image from 'next/image'
 import CirclePattern from './CirclePattern'
+
+
+interface NavLinkProps extends LinkProps {
+  children?: React.ReactNode;
+}
+
+function NavLink ({children, ...props}: NavLinkProps) {
+  return (
+    <Link 
+      className='font-bold text-[15px] text-link-water-white opacity-70 hover:opacity-100 transition duration-100' 
+      {...props}
+    >
+      {children}
+    </Link>
+  )
+}
+
 
 export default function Footer() {
   return (
@@ -17,10 +34,10 @@ export default function Footer() {
       `}
     >
       <Logo mode='dark'/>
-      <div className='flex flex-col items-center gap-[31px] font-bold text-[15px] text-link-water-white opacity-70 z-30 md:flex-row md:gap-10'>
-        <Link href={"/pricing"}>Pricing</Link>
-        <Link href={"/about"}>About</Link>
-        <Link href={"/contact"}>Contact</Link>
+      <div className='flex flex-col items-center gap-[31px] z-30 md:flex-row md:gap-10'>
+        <NavLink href={"/pricing"}>Pricing</NavLink>
+        <NavLink href={"/about"}>About</NavLink>
+        <NavLink href={"/contact"}>Contact</NavLink>
       </div>
       <div className='flex items-center gap-6 z-30 md:flex-1 md:place-content-end'>
         <Image
@@ -28,18 +45,21 @@ export default function Footer() {
           alt='facebook icon'
           width={24}
           height={24}
+          className="cursor-pointer filter invert brightness-0 hover:filter-none"
         />
         <Image
           src={"/assets/shared/desktop/twitter.svg"}
           alt='twitter icon'
           width={24}
           height={24}
+          className="cursor-pointer filter invert brightness-0 hover:filter-none"
         />
         <Image
           src={"/assets/shared/desktop/linkedin.svg"}
           alt='linkedin icon'
           width={24}
           height={24}
+          className="cursor-pointer filter invert brightness-0 hover:filter-none"
         />
       </div>
         <CirclePattern 
