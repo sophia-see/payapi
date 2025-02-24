@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { DM_Serif_Display, Public_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Image from 'next/image'
+import CirclePattern from "@/components/CirclePattern";
 
 const sans = Public_Sans({
   variable: "--font-sans",
@@ -30,6 +32,7 @@ export default function RootLayout({
         className={`${sans.variable} ${serif.variable} antialiased`}
       >
         <div className="w-full h-full min-w-screen min-h-screen">
+          <CirclePattern />
           <Navbar />
           {children}  
         </div>
