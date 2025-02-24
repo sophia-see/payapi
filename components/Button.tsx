@@ -26,7 +26,7 @@ export default function Button(props: ButtonProps) {
       className={`
         transition duration-250
         pt-4 pb-[14px] px-[26px]
-        rounded-[24px]
+        rounded-full
         font-bold text-[15px] tracking-[-0.12px]
         disabled:cursor-not-allowed
         ${isPrimary 

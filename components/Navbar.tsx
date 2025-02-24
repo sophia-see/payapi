@@ -32,7 +32,7 @@ export default function Navbar() {
         <NavLink href={"/contact"}>Contact</NavLink>
       </nav>
       <div className='hidden md:block lg:flex-1 lg:text-end'>
-        <Button className='rounded-full'>Schedule a Demo</Button>
+        <Button>Schedule a Demo</Button>
       </div>
     </header>
   )

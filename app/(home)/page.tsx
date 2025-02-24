@@ -1,5 +1,6 @@
 import CirclePattern from "@/components/CirclePattern";
 import Hero from "./components/Hero";
+import About from "./components/About";
 export default function Home() {
   return (
     <div>
@@ -24,6 +25,7 @@ export default function Home() {
       />
 
       <Hero />
+      <About />
     </div>
   );
 }
