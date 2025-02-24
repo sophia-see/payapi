@@ -1,6 +1,7 @@
 "use client"
 
 import Button from '@/components/Button'
+import EmailField from '@/components/EmailField'
 import EmailInput from '@/components/EmailInput'
 import Header from '@/components/Header'
 import Image from 'next/image'
@@ -8,24 +9,29 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div className='flex flex-col items-center gap-6 px-6 pt-[32px] pb-[80px]'>
+    <div 
+      className={`
+        flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[150px]
+        gap-6 md:gap-[48px]
+        px-6 pt-[32px] pb-[80px] md:pt-[48px] md:pb-[100px] lg:pt-[74px] lg:px-[135px] xl-1440:px-[165px]
+        md:mx-auto 
+        md:max-w-[573px]
+        lg:max-w-none
+      `}
+    >
       <Image
         src={"/assets/home/desktop/illustration-phone-mockup.svg"}
         width={130}
         height={239}
         alt='phone mockup of pay api'
+        className='h-auto md:w-[158px] lg:w-[180px] xl:w-[262px]'
       />
-      <div className='flex flex-col gap-6 items-center text-center'>
+      <div className='flex flex-col gap-6 items-center text-center md:gap-[22px] lg:order-first lg:text-start lg:items-start lg:max-w-[420px] xl:max-w-[546px]'>
         <Header text='Start building with our APIs for absolutely free.' />
-        <div className='w-full flex flex-col gap-4 md:hidden'>
-          <EmailInput/>
-          <Button className='w-full'>Schedule a Demo</Button>
-        </div>
-      </div>
-      <div>
-        <div className='text-light-san-juan-blue text-[15px]'>
+        <EmailField className='w-full lg:w-fit'/>
+        <div className='text-light-san-juan-blue text-[15px] lg:ml-[27px]'>
           Have any questions?{" "}
-          <span className='font-bold'>Contact Us</span>
+          <span className='font-bold mt-2'>Contact Us</span>
         </div>
       </div>
     </div>
