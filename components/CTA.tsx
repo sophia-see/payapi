@@ -14,7 +14,7 @@ export default function CTA() {
         <EmailInput/>
         <Button className='w-full'>Schedule a Demo</Button>
       </div>
-      <div className='md:w-[445px]'>
+      <div className='hidden md:block md:w-[445px]'>
         <EmailInputWithButton />
       </div>
     </div>

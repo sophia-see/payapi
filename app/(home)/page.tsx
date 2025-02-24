@@ -1,4 +1,5 @@
 import CirclePattern from "@/components/CirclePattern";
+import Hero from "./components/Hero";
 export default function Home() {
   return (
     <div>
@@ -22,10 +23,7 @@ export default function Home() {
         `}
       />
 
-      {/* temp */}
-      <div className="h-[500px]">
-
-      </div>
+      <Hero />
     </div>
   );
 }

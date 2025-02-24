@@ -74,6 +74,7 @@ export default function MobileMenu() {
         className={`
           absolute inset-0
           ${isOpen ? "md:hidden" : "hidden"}
+          z-10
         `}
       >
         <div 
