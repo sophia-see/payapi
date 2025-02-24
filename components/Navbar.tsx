@@ -4,17 +4,19 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import MobileMenu from './MobileMenu'
+import Button from './Button'
 
 export default function Navbar() {
   return (
-    <header className='flex justify-between items-center pt-10 px-6'>
+    <header className='flex justify-between items-center pt-10 px-6 md:pt-[45px] md:px-10'>
       <Logo />
       <MobileMenu />
-      <nav className='hidden'>
+      <nav className='hidden md:flex gap-10 font-bold text-[15px] text-san-juan-blue opacity-70'>
         <Link href={"/pricing"}>Pricing</Link>
         <Link href={"/about"}>About</Link>
         <Link href={"/contact"}>Contact</Link>
       </nav>
+      <Button className='hidden md:block'>Schedule a Demo</Button>
     </header>
   )
 }

@@ -60,7 +60,7 @@ export default function MobileMenu() {
   }, [isOpen]);
 
   return (
-    <div>
+    <div className='md:hidden'>
       <Image
         src={"/assets/shared/mobile/menu.svg"}
         alt='menu icon'
