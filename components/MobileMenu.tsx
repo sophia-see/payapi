@@ -27,15 +27,19 @@ export default function MobileMenu() {
           ${isOpen ? "md:hidden" : "hidden"}
         `}
       >
-        <CirclePattern className='z-20 inset-0 -translate-y-[60%]'/>
         <div 
           className={`
             relative
-            h-full w-fit ml-auto
+            h-full w-[298px] ml-auto
             bg-mirage-blue
             py-[48px] px-[24px]
-          `}
+            overflow-hidden
+            `}
         >
+          <CirclePattern 
+            parentClass='absolute top-0 right-0 z-0 overflow-hidden'
+            childClass='w-screen h-screen -translate-y-[60%] h-full place-self-end ml-auto'
+          />
           <div className='flex flex-col'>
             <Image
               src={"/assets/shared/mobile/close.svg"}

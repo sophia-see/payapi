@@ -35,9 +35,10 @@ export default function Footer() {
           height={24}
         />
       </div>
-      <div className='w-full absolute bottom-0 h-[185px] overflow-hidden'>
-        <CirclePattern className='z-20 bottom-0 left-0 right-0 translate-y-[595px]'/>  
-      </div>
+        <CirclePattern 
+          parentClass='w-full absolute bottom-0 h-[185px] overflow-hidden'
+          childClass='absolute bottom-0 left-0 right-0 translate-y-[595px]'
+        />  
     </footer>
   )
 }
