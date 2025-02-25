@@ -20,7 +20,7 @@ export default function Features() {
   return (
     <section 
       className={`
-        w-full
+        w-full max-w-[1110px] mx-auto
         py-20 px-6 md:py-[100px] md:px-[98px] lg:py-[150px] lg:px-[115px] xl-1440:px-[165px]
         flex flex-col gap-20 items-center lg:gap-[150px]
       `}
@@ -41,7 +41,7 @@ export default function Features() {
               alt={`${feature.name} illustration`}
               width={327}
               height={290}
-              className={`flex-shrink w-full md:px-[91px] lg:px-0 ${(index % 2) != 0 ? "order-last" : ""} lg:max-w-[565px]`}
+              className={`flex-shrink w-full md:px-[91px] lg:px-0 ${(index % 2) != 0 ? "lg:order-last" : ""} lg:max-w-[565px]`}
             />
             <div className='flex flex-col gap-6 items-center text-center lg:w-[400px] lg:flex-shrink-0 lg:text-start lg:items-start xl:w-[445px]'>
               <Header text={feature.name} />

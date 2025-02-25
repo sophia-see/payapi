@@ -2,6 +2,7 @@ import CirclePattern from "@/components/CirclePattern";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Features from "./components/Features";
+import Usage from "./components/Usage";
 export default function Home() {
   return (
     <div>
@@ -27,6 +28,7 @@ export default function Home() {
       <Hero />
       <About />
       <Features />
+      <Usage />
     </div>
   );
 }
