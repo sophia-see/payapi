@@ -13,10 +13,13 @@ export default function Hero() {
       className={`
         flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[150px]
         gap-6 md:gap-[48px]
-        mx-6 pt-[32px] pb-[80px] md:pt-[48px] md:pb-[100px] lg:pt-[74px]
+        px-6 pt-[32px] pb-[80px] md:pt-[48px] md:pb-[100px] lg:pt-[74px] lg:px-[115px]
         md:mx-auto 
         md:max-w-[573px]
-        lg:max-w-[1110px] lg:mx-auto
+        lg:max-w-none
+        xl:mx-auto
+        xl:px-0
+        xl:max-w-[1110px]
       `}
     >
       <Image

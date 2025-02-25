@@ -6,15 +6,20 @@ import Usage from "./components/Usage";
 export default function Home() {
   return (
     <div>
+      <div className="max-w-[1110px] mx-auto relative">
+
+      </div>
       <CirclePattern 
         parentClass={`
           absolute 
           top-0 
           right-0
+          left-0
           -z-10 
           overflow-hidden
           lg:w-full
           lg:h-[600px]
+          lg:max-w-[1110px] lg:mx-auto 
         `}
         childClass={`
           max-lg:w-screen max-lg:h-screen

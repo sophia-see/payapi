@@ -35,8 +35,8 @@ function CompanyLogos() {
 
 export default function About() {
   return (
-    <section className='relative bg-mirage-blue'>
-      <div className='lg:max-w-[1110px] lg:mx-auto py-20 md:py-[88px] lg:py-[100px] flex flex-col gap-14 md:gap-[64px] lg:flex-row lg:items-center lg:justify-between'>
+    <section className=' bg-mirage-blue'>
+      <div className='relative lg:max-w-[1110px] lg:mx-auto py-20 md:py-[88px] lg:py-[100px] flex flex-col gap-14 md:gap-[64px] lg:flex-row lg:items-center lg:justify-between'>
         <CompanyLogos />
         <div className='px-6 flex flex-col items-center gap-[32px] md:px-[155px] lg:order-first lg:items-start lg:px-0 lg:max-w-[400px] xl:max-w-[445px]'>
           <div className='text-link-water-white flex flex-col items-center gap-4 text-center md:gap-6 lg:items-start lg:text-start'>
@@ -45,16 +45,11 @@ export default function About() {
           </div>
           <Button variant='secondary' className='w-fit px-8'>About Us</Button>
         </div>        
-      </div>
-
-      {/* <CirclePattern 
-        parentClass='w-full absolute top-0 left-0 h-[230px] overflow-hidden'
-        childClass='absolute bottom-0 left-0 right-0 translate-y-[-calc(780px-230px)] lg:translate-x-[35%]'
-      />   */}
       <CirclePattern 
         parentClass='w-full absolute top-0 bottom-0 overflow-hidden lg:left-0'
         childClass='absolute top-0 left-0 right-0 translate-y-[-85%] lg:translate-y-[-75%] lg:translate-x-[-15%] bottom-0'
       />  
+      </div>
     </section>
   )
 }
