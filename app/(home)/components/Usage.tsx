@@ -26,8 +26,8 @@ export default function Usage() {
   return (
     <section 
       className={`
-        w-full max-w-[1110px] mx-auto
-        px-6 md:px-[40px] lg:px-[115px] xl-1440:px-[165px]
+        w-full lg:max-w-[1110px] lg:mx-auto
+        mx-6 md:mx-[40px]
         flex flex-col gap-[48px] items-center md:gap-[10px] md:items-start md:flex-row lg:gap-[30px]
       `}
     >

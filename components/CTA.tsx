@@ -8,7 +8,7 @@ import EmailInputWithButton from './EmailInputWithButton'
 
 export default function CTA() {
   return (
-    <section className='flex flex-col  gap-8 items-center px-6 py-20 mx-auto text-center md:px-0 xl:flex-row xl:justify-between xl:px-[115px] xl-1440:px-[165px]'>
+    <section className='lg:max-w-[1110px] lg:mx-auto flex flex-col gap-8 items-center mx-6 py-20 text-center md:mx-0 xl:flex-row xl:justify-between'>
       <Header text='Ready to start?' />
       <div className='w-full flex flex-col gap-4 md:hidden'>
         <EmailInput/>

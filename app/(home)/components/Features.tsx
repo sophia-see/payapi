@@ -20,8 +20,8 @@ export default function Features() {
   return (
     <section 
       className={`
-        w-full max-w-[1110px] mx-auto
-        py-20 px-6 md:py-[100px] md:px-[98px] lg:py-[150px] lg:px-[115px] xl-1440:px-[165px]
+        w-full lg:max-w-[1110px] lg:mx-auto
+        py-20 mx-6 md:py-[100px] md:mx-[98px] lg:py-[150px]
         flex flex-col gap-20 items-center lg:gap-[150px]
       `}
     >
