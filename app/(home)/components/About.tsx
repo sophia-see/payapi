@@ -36,7 +36,7 @@ function CompanyLogos() {
 export default function About() {
   return (
     <section className='relative bg-mirage-blue'>
-      <div className='py-20 md:py-[88px] lg:py-[100px]  flex flex-col gap-14 md:gap-[64px] lg:px-[135px] lg:flex-row lg:items-center lg:justify-between xl-1440:px-[165px]'>
+      <div className='py-20 md:py-[88px] lg:py-[100px]  flex flex-col gap-14 md:gap-[64px] lg:px-[115px] lg:flex-row lg:items-center lg:justify-between xl-1440:px-[165px]'>
         <CompanyLogos />
         <div className='px-6 flex flex-col items-center gap-[32px] md:px-[155px] lg:order-first lg:items-start lg:px-0 lg:max-w-[400px] xl:max-w-[445px]'>
           <div className='text-link-water-white flex flex-col items-center gap-4 text-center md:gap-6 lg:items-start lg:text-start'>

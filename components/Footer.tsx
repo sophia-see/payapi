@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer 
       className={`
-        pt-[41px] pb-[55px] md:py-8 md:px-10 lg:px-[135px] xl-1440:px-[165px]
+        pt-[41px] pb-[55px] md:py-8 md:px-10 lg:px-[115px] xl-1440:px-[165px]
         bg-mirage-blue 
         flex flex-col items-center gap-10 md:flex-row md:gap-16
         relative overflow-hidden

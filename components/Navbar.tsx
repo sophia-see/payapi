@@ -23,7 +23,7 @@ function NavLink ({children, ...props}: NavLinkProps) {
 
 export default function Navbar() {
   return (
-    <header className='flex justify-between lg:justify-start lg:gap-16 items-center pt-10 px-6 md:pt-[45px] md:px-10 lg:px-[135px] xl-1440:px-[165px]'>
+    <header className='flex justify-between lg:justify-start lg:gap-16 items-center pt-10 px-6 md:pt-[45px] md:px-10 lg:px-[115px] xl-1440:px-[165px]'>
       <Logo />
       <MobileMenu />
       <nav className='hidden md:flex gap-10'>
