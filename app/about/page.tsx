@@ -17,12 +17,13 @@ export default function AboutPage() {
           right-0
           left-0
           -z-10 
-          overflow-hidden
-          w-screen h-screen
-          `}
+          lg:w-full
+          lg:h-[600px]
+          lg:max-w-[1110px] lg:mx-auto 
+        `}
         childClass={`
-          absolute right-[-125%]
-          translate-y-[-85%]
+          absolute right-[-125%] md:right-[-65%] lg:right-[-30%]
+          translate-y-[-85%] md:translate-y-[-65%] lg:translate-y-[-75%]
           flex items-start
         `}
       />
