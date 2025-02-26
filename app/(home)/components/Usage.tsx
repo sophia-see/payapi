@@ -1,6 +1,4 @@
-import Header from '@/components/Header'
 import Paragraph from '@/components/Paragraph'
-import SubHeader from '@/components/SubHeader'
 import Image from 'next/image'
 import React from 'react'
 
@@ -33,7 +31,7 @@ export default function Usage() {
       `}
     >
       {
-        USAGES.map((usage, index) => (
+        USAGES.map((usage) => (
           <div 
             key={usage.name} 
             className={`

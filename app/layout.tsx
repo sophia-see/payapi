@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { DM_Serif_Display, Public_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Image from 'next/image'
-import CirclePattern from "@/components/CirclePattern";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 

@@ -1,8 +1,6 @@
 "use client"
 
-import Button from '@/components/Button'
 import EmailField from '@/components/EmailField'
-import EmailInput from '@/components/EmailInput'
 import Header from '@/components/Header'
 import Image from 'next/image'
 import React from 'react'

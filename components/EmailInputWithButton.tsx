@@ -16,7 +16,7 @@ export default function EmailInputWithButton({className, ...props}: EmailInputWi
           font-bold text-[15px] text-san-juan-blue placeholder:opacity-50
           outline-none
           md:w-full md:pr-[190px]
-          
+          ${className || ""}
         `}
         placeholder='Enter email address'
         {...props}
