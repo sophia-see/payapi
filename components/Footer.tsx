@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer 
       className={`
-        bg-mirage-blue 
+        bg-mirage-blue  overflow-hidden
       `}
     >
       <div 
@@ -35,7 +35,7 @@ export default function Footer() {
         lg:max-w-[1110px] lg:mx-auto
         pt-[41px] pb-[55px] md:py-8 md:mx-10
         flex flex-col items-center gap-10 md:flex-row md:gap-16
-        relative overflow-hidden
+        relative
         `}
       >
         <Logo mode='dark'/>
@@ -68,7 +68,7 @@ export default function Footer() {
           />
         </div>
         <CirclePattern 
-          parentClass='w-full absolute bottom-0 h-[185px] overflow-hidden'
+          parentClass='w-full absolute bottom-0 h-[185px]'
           childClass='absolute bottom-0 left-0 right-0 translate-y-[calc(780px-185px)] md:translate-x-[55%]'
         />  
       </div>

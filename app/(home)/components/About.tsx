@@ -35,7 +35,7 @@ function CompanyLogos() {
 
 export default function About() {
   return (
-    <section className='relative bg-mirage-blue'>
+    <section className='relative bg-mirage-blue overflow-hidden'>
       <div 
         className={`
           relative
@@ -55,7 +55,7 @@ export default function About() {
           <Button variant='secondary' className='w-fit px-8'>About Us</Button>
         </div>        
         <CirclePattern 
-          parentClass='w-full absolute top-0 bottom-0 overflow-hidden lg:left-0'
+          parentClass='w-full absolute top-0 bottom-0 lg:left-0'
           childClass='absolute top-0 left-0 right-0 translate-y-[-85%] lg:translate-y-[-75%] lg:translate-x-[-15%] bottom-0'
         />  
       </div>
