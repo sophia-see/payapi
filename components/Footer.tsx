@@ -28,7 +28,6 @@ export default function Footer() {
     <footer 
       className={`
         bg-mirage-blue 
-        
       `}
     >
       <div 
@@ -73,7 +72,6 @@ export default function Footer() {
           childClass='absolute bottom-0 left-0 right-0 translate-y-[calc(780px-185px)] md:translate-x-[55%]'
         />  
       </div>
-      
     </footer>
   )
 }

@@ -33,11 +33,15 @@ export default function RootLayout({
       <body
         className={`${sans.variable} ${serif.variable} antialiased`}
       >
-        <main className="w-full h-full min-w-screen min-h-screen overflow-x-hidden">
-          <Navbar />
-          {children}
-          <CTA />
-          <Footer />
+        <main className="w-full h-full min-w-screen min-h-screen overflow-x-hidden flex flex-col">
+          <div className="w-full h-full">
+            <Navbar />
+            {children}
+            <CTA />
+          </div>
+          <div className="w-full h-full flex-1 flex flex-col justify-end">
+            <Footer />
+          </div>
         </main>
       </body>
     </html>

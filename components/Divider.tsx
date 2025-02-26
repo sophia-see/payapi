@@ -10,7 +10,7 @@ export default function Divider({className, mode}: DividerProps) {
   const isDark = mode == "dark";
 
   return (
-    <div className={`w-full h-[1px] ${isLight ? "bg-link-water-white" : isDark ? "" : ""} ${className || ""}`}>
+    <div className={`w-full h-[1px] ${isLight ? "bg-link-water-white" : isDark ? "bg-san-juan-blue" : ""} ${className || ""}`}>
       
     </div>
   )
