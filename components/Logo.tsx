@@ -20,7 +20,7 @@ export default function Logo({mode = "light"}: LogoProps) {
       onClick={() => {
         redirect("/")
       }}
-      className={isDark ? "filter invert brightness-0" : ""}
+      className={`${isDark ? "filter invert brightness-0" : ""} cursor-pointer`}
     />
   )
 }

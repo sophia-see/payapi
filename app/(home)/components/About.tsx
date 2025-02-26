@@ -5,7 +5,7 @@ import SubHeader from '@/components/SubHeader'
 import Image from 'next/image'
 import React from 'react'
 
-const COMPANIES = [
+export const COMPANIES = [
   "tesla",
   "microsoft",
   "hewlett-packard",

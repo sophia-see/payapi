@@ -16,9 +16,10 @@ function Check() {
 }
 
 interface CheckboxProps {
+  className?: string;
 }
 
-export default function Checkbox({}: CheckboxProps) {
+export default function Checkbox({className}: CheckboxProps) {
   const [isChecked, setIsChecked] = React.useState(false);
 
   const onClickCheckbox = () => {
@@ -34,6 +35,7 @@ export default function Checkbox({}: CheckboxProps) {
         cursor-pointer
         w-6 h-6
         ${isChecked ? "bg-dark-pink" : "bg-san-juan-blue opacity-25"}
+        ${className || ""}
       `}
       onClick={onClickCheckbox}
     >
